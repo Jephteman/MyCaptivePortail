@@ -107,7 +107,7 @@ def main():
             s.shutdown()
 
 
-app1 = Flask('web app',static_folder='static')
+app1 = Flask('web app',static_folder='static',template_folder='templates')
 
 @app1.errorhandler(404)
 def page_not_found(err):
